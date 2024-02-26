@@ -42,18 +42,26 @@ export default function Login() {
             localStorage.setItem('token', token);
             showSuccessSwal();
         } catch (error) {
-            if (error.response.status === 404) {
-                withReactContent(Swal).fire({
-                    title: 'User not found',
-                    icon: 'error',
-                    confirmButtonText: 'Ok'
-                });
-            } else if (error.response.status === 401) {
-                withReactContent(Swal).fire({
-                    title: 'Invalid password',
-                    icon: 'error',
-                    confirmButtonText: 'Ok'
-                });
+            if (!error.response.status) {
+                if (error.response.status === 404) {
+                    withReactContent(Swal).fire({
+                        title: 'User not found',
+                        icon: 'error',
+                        confirmButtonText: 'Ok'
+                    });
+                } else if (error.response.status === 401) {
+                    withReactContent(Swal).fire({
+                        title: 'Invalid password',
+                        icon: 'error',
+                        confirmButtonText: 'Ok'
+                    });
+                } else {
+                    withReactContent(Swal).fire({
+                        title: 'Something went wrong',
+                        icon: 'error',
+                        confirmButtonText: 'Ok'
+                    });
+                }
             } else {
                 withReactContent(Swal).fire({
                     title: 'Something went wrong',
