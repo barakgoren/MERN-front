@@ -1,0 +1,63 @@
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.welcome {
+  background: linear-gradient(to top, darkblue, white 50%, white 50%, darkblue),
+    linear-gradient(to right, rgb(52, 192, 238), white 50%, rgb(92, 226, 92));
+  background-blend-mode: screen;
+}
+
+.reg-window {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.loginBtn {
+  /* Stick the button to the bottom of the div */
+  bottom: 0;
+  cursor: pointer;
+}
+
+.home-container {
+  /* Set the height to full screen */
+  height: 100vh;
+  width: 101vw;
+}
+
+.name-container {
+  width: fit-content !important;
+}
+
+.post-button:hover {
+  background-color: #fbfbfb;
+  color: cadetblue;
+}
+
+.text-area {
+  resize: none;
+  background-color: white;
+  border: 1px solid rgb(146, 146, 146);
+}
+
+.text-area:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.scrolable-section {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.profile-router:hover {
+  background: radial-gradient(ellipse 75% 40% at left, white 50%, rgba(255, 255, 255, 0) 100%);
+  color: rgb(70, 70, 70);
+  background-repeat: no-repeat;
+  border-radius: 50%;
+
+}
+
+.logout-btn:hover {
+  color:white
+}
