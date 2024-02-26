@@ -49,7 +49,7 @@ const Register = () => {
         console.log(formData);
         console.log(config.api);
 
-        axios.post(`${config.api}/users`, formData, {
+        axios.post(`https://blue-catfish-gear.cyclic.app/users`, formData, {
             headers: {
                 'Content-Type': 'multipart/form-data'
             }
