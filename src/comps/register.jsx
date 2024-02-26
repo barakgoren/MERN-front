@@ -45,6 +45,9 @@ const Register = () => {
         formData.append('email', email);
         formData.append('city', city);
         formData.append('file', fileSelected);
+        
+        console.log(formData);
+        console.log(config.api);
 
         axios.post(`${config.api}/users`, formData, {
             headers: {
