@@ -1,3 +1,3 @@
 module.exports.config = {
-    api: "http://localhost:3001"
+    api: "https://blue-catfish-gear.cyclic.app"
 };
